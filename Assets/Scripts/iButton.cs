@@ -9,7 +9,7 @@ public class iButton : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         moodNumber = int.Parse(this.name.Substring(1));
-        moods = new string[5]{"Happy", "Sad", "Angry", "Embarrassed", "Scared"};
+        moods = new string[10]{"Embarrassed", "Happy", "Sad", "Angry", "Confused", "Surprised", "Tired", "Annoyed", "Laughing", "Scared"};
 	}
 	
 	// Update is called once per frame
@@ -18,8 +18,7 @@ public class iButton : MonoBehaviour {
 	}
 
     public void changeImage() {
-        Debug.Log("IMAGE CHANGED, we are " + moodNumber);
-        mainText.GetComponent<Text>().text = moods[moodNumber];
+        mainText.GetComponent<Text>().text = moods[moodNumber];        
     }
 
     
