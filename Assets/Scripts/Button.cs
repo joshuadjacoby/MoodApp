@@ -6,7 +6,6 @@ public class Button : MonoBehaviour {
     public GameObject mainImage;
     private int moodNumber;
     private Sprite[] moods;
-    private Button[] buttons;
     // Use this for initialization
 	void Start () {
         moodNumber = int.Parse(this.name.Substring(1));
@@ -23,5 +22,11 @@ public class Button : MonoBehaviour {
         mainImage.GetComponent<Image>().sprite = moods[moodNumber];
     }
 
-    
+    public void changeScene() {
+        Application.LoadLevel("Learn 2");
+    }
+
+    public void exit() {
+        Application.LoadLevel("Play");
+    }    
 }

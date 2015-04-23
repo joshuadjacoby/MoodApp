@@ -21,5 +21,13 @@ public class iButton : MonoBehaviour {
         mainText.GetComponent<Text>().text = moods[moodNumber];        
     }
 
+    public void changeScene() {
+        Application.LoadLevel("Learn");
+    }
+
+    public void exit() {
+        Application.LoadLevel("Play");
+    }
+
     
 }
