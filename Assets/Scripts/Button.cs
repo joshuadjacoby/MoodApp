@@ -28,5 +28,6 @@ public class Button : MonoBehaviour {
 
     public void exit() {
         Application.LoadLevel("Play");
+
     }    
 }
